@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Daniel Ogunbamowo (dogun@stanford.edu)">
+<meta name="dcterms.date" content="2024-07-31">
+
+<title>Replication of Sleep Preferentially Enhances Memory for Emotional Components of Scenes by Payne, Stickgold, Swanberg and Kensinger (2008, Psychological Science)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="Replication Report Template_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Replication Report Template_files/libs/quarto-html/quarto.js"></script>
+<script src="Replication Report Template_files/libs/quarto-html/popper.min.js"></script>
+<script src="Replication Report Template_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Replication Report Template_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Replication Report Template_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Replication Report Template_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Replication Report Template_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Replication Report Template_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Replication Report Template_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Replication of Sleep Preferentially Enhances Memory for Emotional Components of Scenes by Payne, Stickgold, Swanberg and Kensinger (2008, Psychological Science)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Daniel Ogunbamowo (dogun@stanford.edu) </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 31, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>Links to</em> <a href="https://github.com/psych251/payne2008_rescue">github repo</a>, <a href="https://osf.io/q8rv2">osf preregistration</a>, and <a href="https://github.com/psych251/payne2008_rescue/blob/main/original_paper/payne-et-al-2008-sleep-preferentially-enhances-memory-for-emotional-components-of-scenes.pdf">the original paper</a></p>
+<p>Based on the prior write-up, describe any differences between the original and 1st replication in terms of methods, sample, sample size, and analysis. Note any potential problems such as exclusion rates, noisy data, or issues with analysis.</p>
+<section id="differences-between-original-and-first-replication" class="level1">
+<h1>Differences between original and first replication</h1>
+<p>The first replication project differed from the original in that it recruited online crowd workers (MTurk), whereas the participants from the original study were college students at Harvard and Boston College. The replication project experiments were also run online, whereas the original experiment was done in person, in a lab.</p>
+<p>In the original experiment, participants were randomly assigned to one of two possible conditions (one in which they would view a set of stimuli after sleeping and the other after 12 hours awake). In the replication, participants were allowed to self-select which condition they would be in. This presents a strong chance of selection bias, and also reduces our opportunity to make causal inferences from the results.</p>
+<p>The replication attempted to recruit 48 participants, but only ended up being able to include 23 participants in the final analysis due to so many of them dropping out. The original study recruited 88 participants.</p>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<section id="power-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="power-analysis">Power Analysis</h3>
+<p>How much power does your planned sample have for original effect? For an attenua</p>
+<p>Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.</p>
+<p><strong>I plan to recruit 110 participants using prolific. Seeing as this is a rescue attempt of a replication that may have failed largely due to a small sample size, I think it makes sense to plan for a sufficiently large sample. The original study recruited 88 participants so I chose 110 partly to recruit more particiapnts than they did, but also due to financial constraints and to keep the total cost of this experiment to around $350.</strong></p>
+</section>
+<section id="exclusion-criteria" class="level3">
+<h3 class="anchored" data-anchor-id="exclusion-criteria">Exclusion Criteria</h3>
+<p><strong>Participants who complete neither or only one of the two required experiment conditions will be removed from any analyses.</strong></p>
+<p><strong>In the replication project, 91.3% of the sample had finished or attended college, so I will attempt to collect a sample that is more diverse in SES.</strong></p>
+</section>
+<section id="materials" class="level3">
+<h3 class="anchored" data-anchor-id="materials">Materials</h3>
+<p>All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely. Or, quote directly and just point out exceptions to what was described in the original article.</p>
+<p><strong>“The scenes portrayed negative arousing or neutral objects placed on plausible neutral backgrounds. For each of 64 scenes (e.g., a car on a street), we created eight different versions by placing each of two similar neutral objects (e.g., two images of a car) and each of two related negative objects (e.g., two images of a car accident) on each of two plausible neutral backgrounds (e.g., two images of a street). An additional 32 scenes served as lures on a recognition memory test (Fig. 1). Participants in a previous study had rated the objects and backgrounds for valence and arousal, using 7-point scales (Kensinger, Garoff-Eaton, &amp; Schacter, 2006). All negative objects had received arousal ratings of 5 to 7 (with high scores signifying an exciting or arousing image) and valence ratings lower than 3 (with low scores signifying a negative image). All neutral items (objects and backgrounds) had been rated as nonarousing (arousal values lower than 4) and neutral (valence ratings between 3 and 5).”</strong></p>
+<p><strong>This will be followed precisely.</strong></p>
+<p><strong>Fig. 1.</strong> “Examples of the scenes presented to subjects. Eight versions of each scene were created by combining each of four similar objects (two neutral objects, two negative and arousing emotional objects) with each of two plausible neutral backgrounds. In this example, the two neutral central objects are cars, and the two negative central objects are cars damaged in an accident; the neutral backgrounds are street scenes. Two of the eight versions of the completed scene are shown.”]</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"fig1.webp"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="fig1.webp" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="procedure" class="level3">
+<h3 class="anchored" data-anchor-id="procedure">Procedure</h3>
+<p>Can quote directly from original article - just put the text in quotations and note that this was followed precisely. Or, quote directly and just point out exceptions to what was described in the original article.</p>
+<p><strong>“Participants studied a set of 64 scenes (32 with a neutral object and 32 with a negative object, all on neutral backgrounds) for 5 s each, and then indicated on a 7-point scale whether they would approach or move away from the scene if they encountered it in real life. This task was used to maximize memory encoding.</strong></p>
+<p><strong>After the delay period, participants performed an unexpected, self-paced recognition task. During this task, objects and backgrounds were presented separately and one at a time. Some of these objects and backgrounds were identical to the scene components that had been studied (e.g., the same car accident), others were the alternate version of the object or background and therefore shared the same verbal label but differed in specific visual details (e.g., a similar car accident), and others were objects or backgrounds that had not been studied (new). Participants never saw both the same and the similar version of an item at test. Each object or background was presented with a question (e.g., “Did you see a monkey?”). If the answer to the question was “yes,” participants pressed one button to indicate that the object or background was an exact match to a studied component (“same”) or a second button to indicate that it was not an exact match (“similar”). If the answer to the question was “no,” they pressed a third button.”</strong></p>
+<p><strong>The recognition task includes 32 same objects (16 negative, 16 neutral), 32 similar objects (16 negative, 16 neutral), 32 new objects (16 negative, 16 neutral), 32 same backgrounds (16 previously shown with a negative object, 16 previously shown with a neutral object), 32 similar backgrounds (16 previously shown with a negative object, 16 previously shown with a neutral object), and 32 new backgrounds.”</strong></p>
+<p><strong>This will be followed precisely. For the replication project, the experiment sessions before and after the delay period will be referred to as Session 1 and Session 2 respectively. I will also do this for my rescue attempt.</strong></p>
+</section>
+<section id="controls" class="level3">
+<h3 class="anchored" data-anchor-id="controls">Controls</h3>
+<p>What attention checks, positive or negative controls, or other quality control measures are you adding so that a (positive or negative) result will be more interpretable?</p>
+<p><strong>Neither the original study, nor the replication controlled for sleep quality and number of hours slept, but I think it would be useful to control for this in the rescue attempt.</strong></p>
+<p><strong>I also think it might be useful to periodically check with participants whether they actually find some of the stimuli to be negatively or neutrally arousing, which was the intention of the creators of the stimuli. After looking through the images that make up the stimulus set, whilst some of them may induce negative affect, some seemed too unrealistic to induce negative affect, or just seemed like they would stand out as being strange rather than negative (potentially due to appearing poorly photoshopped). This might need to be done with a separate set of participants in a different experiment.</strong></p>
+</section>
+<section id="analysis-plan" class="level3">
+<h3 class="anchored" data-anchor-id="analysis-plan">Analysis Plan</h3>
+<p>Can also quote directly, though it is less often spelled out effectively for an analysis strategy section. The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.</p>
+<p><strong>Clarify key analysis of interest here</strong> You can also pre-specify additional analyses you plan to do.</p>
+<p><strong>“We scored a response as specific recognition of visual details when a subject correctly responded”same” to a same item, but as general recognition without specific details when a subject responded “similar” to a same item. Because “similar” responses were constrained by the number of “same” responses (i.e., subjects responded “similar” only when they did not remember the visual details), we computed the general recognition score as the proportion of “similar” responses after exclusion of “same” responses (similar/[1- same]).” “Specific and general recognition scores were computed separately for central objects (negative or neutral) and for the peripheral neutral backgrounds (studied with either a negative or a neutral object).”</strong></p>
+<p><strong>I will follow the replication, which planned to perform a 2 (condition: sleep, wake) x 2 (valence: negative, neutral) x 2 (scene component: object, background) mixed ANOVA. As well as a follow-up 2 (condition: sleep, wake) x 2 (valence: negative, neutral) mixed ANOVA applied on the recognition of objects and backgrounds separately.</strong></p>
+<p><strong>Time and funds permitting, I also plan to do additional analyses double checking the valence ratings of the stimulus, as well as whether sleep quality (low, medium, high) has any potential interaction effect.</strong></p>
+<p>The term of interest is the three-way interaction (Condition x Valence x Scene Component). The original study found that negative, but not neutral stimuli were better remembered after sleep than wake. The original replaction did not find this result.</p>
+</section>
+<section id="differences-from-original-study-and-1st-replication" class="level3">
+<h3 class="anchored" data-anchor-id="differences-from-original-study-and-1st-replication">Differences from Original Study and 1st replication</h3>
+<p>Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study. The goal, of course, is to minimize those differences, but differences will inevitably occur. Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.</p>
+<p><strong>Key Differences</strong></p>
+<p><strong>- I aim to recruit a sample greater than that of the original study (n = 88) and the first replication (n = 23)</strong> <strong>- I intend to recruit a sample diverse in SES</strong> <strong>- Participants will be randomly assigned to one of the two conditions (sleep or wake), rather than assigning themselves to a condition</strong> <strong>- The original study was done in-person, and replication was done online using Mturk workers. I will do my rescue online using prolific workers</strong> <strong>- I plan to run a smaller parallel study confirming the valence ratings of the stimuli by the original authors</strong> <strong>- I plan to ask participants in all conditions about their sleep quality the previous night when they complete the second of the two experimental sessions</strong> <strong>- I plan to include sleep quality in an additional mixed ANOVA. This may result in a slight change to the original claims of the article, which were that sleep preferentially enhances memory for emotional components of scenes. A novel result for this control would result in a new claim: Depending on sleep quality, sleep preferentially enhances memory for emotional components of scenes</strong></p>
+</section>
+<section id="methods-addendum-post-data-collection" class="level3">
+<h3 class="anchored" data-anchor-id="methods-addendum-post-data-collection">Methods Addendum (Post Data Collection)</h3>
+<section id="actual-sample" class="level4">
+<h4 class="anchored" data-anchor-id="actual-sample">Actual Sample</h4>
+<p>I was only able to collect data from 24 participants (one had to be excluded as they failed to wait 12 hours between completing session 1 and session 2). The sample was much smaller than expected due to diffculties getting participants to successfully complete both sessions 12 hours apart. A large number of participants (over 700) discontinued the first survey once they realised they would need to complete a second survey.</p>
+<p>In reality, this rescue attempt did not fare any better than the original 251 replication attempt which also only recruited 23 participants.</p>
+</section>
+<section id="differences-from-pre-data-collection-methods-plan" class="level4">
+<h4 class="anchored" data-anchor-id="differences-from-pre-data-collection-methods-plan">Differences from pre-data collection methods plan</h4>
+<p>Any differences from what was described as the original plan, or “none”.</p>
+<p><strong>Due to existing difficulties with participant recruitment, full-random assignment would have not been feasible. However, to still keep some level of random assignment, unlike the first replication, it seemed that surveys being completed very quickly after being published on prolific acted like quasi-random assignment. All that needed to be done was to publish a survey to half the expected participants in the morning, and then publish an identical survey in the evening only available to another half of the expected number of participants. Ultimately, we ended up with 15 participants in the wake group, and 8 in the sleep group.</strong></p>
+</section>
+</section>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<section id="data-preparation" class="level3">
+<h3 class="anchored" data-anchor-id="data-preparation">Data preparation</h3>
+<p>Data preparation following the analysis plan.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data_s1s2 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"../data/payne_data_de_id.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>New names:
+Rows: 25 Columns: 293
+── Column specification
+──────────────────────────────────────────────────────── Delimiter: "," chr
+(275): DistributionChannel, UserLanguage, 1_s2_q1, 2_s2_q1, 3_s2_q1, 4_... dbl
+(7): ...1, Progress, Duration (in seconds), age, s1_Progress, s1_Dura... lgl
+(3): Finished, ExternalReference, s1_Finished dttm (6): StartDate, EndDate,
+RecordedDate, s1_StartDate, s1_EndDate, s1_R... time (2): current_time,
+s1_current_time
+ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
+Specify the column types or set `show_col_types = FALSE` to quiet this message.
+• `` -&gt; `...1`
+• `s1_check_hours...359` -&gt; `s1_check_hours...287`
+• `s1_check_time...360` -&gt; `s1_check_time...288`
+• `s1_check_hours...362` -&gt; `s1_check_hours...290`
+• `s1_check_time...363` -&gt; `s1_check_time...291`</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># join s1 and s2 data</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#data_s1s2 &lt;- left_join(data_s2_clean, data_s1_clean, by = c("ID" = "s1_ID"))</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate the s1-s2 time gap</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>data_s1s2 <span class="ot">=</span> data_s1s2 <span class="sc">%&gt;%</span> </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">int =</span> <span class="fu">interval</span>(<span class="at">start =</span> s1_StartDate, <span class="at">end =</span>  StartDate)) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">time_gap_seconds =</span> <span class="fu">int_length</span>(int)) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">time_gap_minutes =</span> <span class="fu">minute</span>(<span class="fu">seconds_to_period</span>(time_gap_seconds))) <span class="sc">%&gt;%</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">time_gap_hours =</span> <span class="fu">hour</span>(<span class="fu">seconds_to_period</span>(time_gap_seconds))) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>(int)) </span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter out participants who did session 2 as soon as they did session 1</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>data_s1s2 <span class="ot">=</span> data_s1s2 <span class="sc">%&gt;%</span> </span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(time_gap_hours <span class="sc">&gt;</span> <span class="dv">1</span>)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter out pilot participants. Pilot ended 11/28/2023</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>data_s1s2 <span class="ot">=</span> data_s1s2 <span class="sc">%&gt;%</span> </span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(StartDate <span class="sc">&gt;</span> <span class="st">"2023-11-29"</span>)</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(data_s1s2<span class="sc">$</span>condition, data_s1s2<span class="sc">$</span>s1_am_or_pm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       
+        evening morning
+  sleep       8       0
+  wake        0      15</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># distribution of S2 time of the day</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data_s1s2, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">hour</span>(StartDate), <span class="at">fill =</span> condition))<span class="sc">+</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">'black'</span>) <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Distribution of the time of Session 2 (in Pacific Time)"</span>, <span class="at">x =</span> <span class="st">"Time of the day (hour)"</span>)<span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="dv">0</span>, <span class="dv">24</span>) <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 4 rows containing missing values or values outside the scale range
+(`geom_bar()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Replication-Report-Template_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># distribution of the time gap between S1 and S2</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data_s1s2, <span class="fu">aes</span>(<span class="at">x =</span> time_gap_hours))<span class="sc">+</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">'black'</span>, <span class="at">fill =</span> <span class="st">'white'</span>) <span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Distribution of time gap between Session 1 and Session 2"</span>, <span class="at">x =</span> <span class="st">"duration (hours)"</span>)<span class="sc">+</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">14</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 2 rows containing missing values or values outside the scale range
+(`geom_bar()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Replication-Report-Template_files/figure-html/unnamed-chunk-5-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="do">#### Prepare data for analysis - create columns etc.</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># temp1: data with Q1 gathered (Q1: did you see this object/background?)</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> data_s1s2 <span class="sc">%&gt;%</span> </span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gather</span>(item, s2_q1, <span class="fu">contains</span>(<span class="st">"s2_q1"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">item =</span> <span class="fu">substr</span>(item, <span class="dv">1</span>, <span class="fu">str_length</span>(item)<span class="sc">-</span><span class="dv">3</span>))</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="co"># create item_number and rearrange the dataframe</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span> </span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">item_number =</span> <span class="fu">as.numeric</span>(<span class="fu">str_sub</span>(item, <span class="dv">1</span>, <span class="fu">str_length</span>(item)<span class="sc">-</span><span class="dv">3</span>))) <span class="sc">%&gt;%</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">code_s1=</span><span class="st">`</span><span class="at">...1</span><span class="st">`</span>) <span class="co"># guessing this is some per-user thing? </span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  <span class="co">#arrange(code_s1, item_number)</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="co"># read in the stimuli list csv</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>item_list <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'questions_list.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 192 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (5): item_filname, item_link, component, valence, type
+dbl (1): item_number
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># merge the item list to the data frame</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>data_joined <span class="ot">&lt;-</span>  <span class="fu">left_join</span>(data, item_list, <span class="at">by =</span> <span class="st">"item_number"</span>) </span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co"># rearrange</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>data_joined <span class="ot">&lt;-</span> data_joined <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(code_s1, item_number) </span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="do">## summarize into individual-wise data</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>data_ind <span class="ot">&lt;-</span> data_joined <span class="sc">%&gt;%</span> </span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(code_s1, condition, type, component, valence, s2_q1) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">count_ans =</span> <span class="fu">n</span>()) <span class="co">#the number of all answers separately (same, similar, new)</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>data_ind <span class="ot">&lt;-</span> data_ind <span class="sc">%&gt;%</span> </span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(code_s1, condition, type, component, valence) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">count_all =</span> <span class="fu">n</span>()) <span class="co">#the number of questions</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="co"># collapse to individual level</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>data_ind <span class="ot">&lt;-</span> data_ind <span class="sc">%&gt;%</span> </span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(code_s1, condition, type, component, valence, s2_q1) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">count_ans =</span> <span class="fu">mean</span>(count_ans, <span class="at">na.rm =</span> T),</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>            <span class="at">count_all =</span> <span class="fu">mean</span>(count_all, <span class="at">na.rm =</span> T)) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">spread</span>(s2_q1, count_ans) <span class="co">#spread s2_q1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'code_s1', 'condition', 'type',
+'component', 'valence'. You can override using the `.groups` argument.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#replace na with 0</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>data_ind[<span class="fu">is.na</span>(data_ind)] <span class="ot">&lt;-</span>  <span class="dv">0</span> </span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="co">#calculate specific and general recognition rate</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>data_ind <span class="ot">&lt;-</span>  data_ind <span class="sc">%&gt;%</span> </span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">specific_recog =</span> Identical<span class="sc">/</span>count_all, <span class="co">#specific recognition</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">general_recog =</span> Similar<span class="sc">/</span>(count_all<span class="sc">-</span>Identical) <span class="co">#general recognition</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>         ) </span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="co"># order the level of condition</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>data_ind<span class="sc">$</span>condition <span class="ot">&lt;-</span> <span class="fu">factor</span>(data_ind<span class="sc">$</span>condition, <span class="at">levels=</span><span class="fu">c</span>(<span class="st">'wake'</span>, <span class="st">'sleep'</span>), <span class="at">ordered=</span><span class="cn">TRUE</span>)</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>data_ind<span class="sc">$</span>component <span class="ot">&lt;-</span> <span class="fu">factor</span>(data_ind<span class="sc">$</span>component, <span class="at">levels=</span><span class="fu">c</span>(<span class="st">'object'</span>, <span class="st">'background'</span>), <span class="at">ordered=</span><span class="cn">TRUE</span>)</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a><span class="co"># show the head of the individual-wise data</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">head</span>(data_ind, <span class="dv">11</span>), <span class="at">digit =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 9%">
+<col style="width: 7%">
+<col style="width: 10%">
+<col style="width: 8%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 3%">
+<col style="width: 7%">
+<col style="width: 14%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">code_s1</th>
+<th style="text-align: left;">condition</th>
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">component</th>
+<th style="text-align: left;">valence</th>
+<th style="text-align: right;">count_all</th>
+<th style="text-align: right;">Identical</th>
+<th style="text-align: right;">New</th>
+<th style="text-align: right;">Similar</th>
+<th style="text-align: right;">specific_recog</th>
+<th style="text-align: right;">general_recog</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">wake</td>
+<td style="text-align: left;">new</td>
+<td style="text-align: left;">background</td>
+<td style="text-align: left;">neutral</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">0.06</td>
+<td style="text-align: right;">0.50</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">wake</td>
+<td style="text-align: left;">new</td>
+<td style="text-align: left;">object</td>
+<td style="text-align: left;">negative</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.31</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">wake</td>
+<td style="text-align: left;">new</td>
+<td style="text-align: left;">object</td>
+<td style="text-align: left;">neutral</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0.06</td>
+<td style="text-align: right;">0.40</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">wake</td>
+<td style="text-align: left;">same</td>
+<td style="text-align: left;">background</td>
+<td style="text-align: left;">negative</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0.19</td>
+<td style="text-align: right;">0.69</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">wake</td>
+<td style="text-align: left;">same</td>
+<td style="text-align: left;">background</td>
+<td style="text-align: left;">neutral</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0.44</td>
+<td style="text-align: right;">0.89</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">wake</td>
+<td style="text-align: left;">same</td>
+<td style="text-align: left;">object</td>
+<td style="text-align: left;">negative</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.75</td>
+<td style="text-align: right;">0.75</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">wake</td>
+<td style="text-align: left;">same</td>
+<td style="text-align: left;">object</td>
+<td style="text-align: left;">neutral</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.75</td>
+<td style="text-align: right;">0.75</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">wake</td>
+<td style="text-align: left;">similar</td>
+<td style="text-align: left;">background</td>
+<td style="text-align: left;">negative</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">0.83</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">wake</td>
+<td style="text-align: left;">similar</td>
+<td style="text-align: left;">background</td>
+<td style="text-align: left;">neutral</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0.31</td>
+<td style="text-align: right;">0.82</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">wake</td>
+<td style="text-align: left;">similar</td>
+<td style="text-align: left;">object</td>
+<td style="text-align: left;">negative</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0.38</td>
+<td style="text-align: right;">1.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">wake</td>
+<td style="text-align: left;">similar</td>
+<td style="text-align: left;">object</td>
+<td style="text-align: left;">neutral</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0.44</td>
+<td style="text-align: right;">0.78</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>###Confirmatory analysis</p>
+</section>
+</section>
+<section id="key-statistic" class="level2">
+<h2 class="anchored" data-anchor-id="key-statistic">Key Statistic</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="do">## 3-way anova: test on the 3-way interaction</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>anova_3way <span class="ot">=</span> <span class="fu">ezANOVA</span>(</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> data_ind <span class="sc">%&gt;%</span> <span class="fu">filter</span>(type <span class="sc">==</span> <span class="st">"same"</span>),</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">dv =</span> .(general_recog),</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">wid =</span> .(code_s1), </span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">within =</span> .(component, valence),</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">between =</span> .(condition)</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Converting "code_s1" to factor for ANOVA.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Converting "valence" to factor for ANOVA.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Data is unbalanced (unequal N per group). Make sure you specified a
+well-considered value for the type argument to ezANOVA().</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Show the ANOVA &amp; assumption tests.</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(anova_3way)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$ANOVA
+                       Effect DFn DFd          F          p p&lt;.05          ges
+2                   condition   1  21 2.94691252 0.10075734       8.144255e-02
+3                   component   1  21 0.01168321 0.91495127       7.332058e-05
+5                     valence   1  21 2.20542007 0.15238391       1.631864e-02
+4         condition:component   1  21 0.16057804 0.69267266       1.006803e-03
+6           condition:valence   1  21 0.09566309 0.76014543       7.190683e-04
+7           component:valence   1  21 5.02232797 0.03595824     * 1.840747e-02
+8 condition:component:valence   1  21 1.02131666 0.32371020       3.798965e-03</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="additional-analyses" class="level1">
+<h1>Additional Analyses</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="do">## 2-way anova: test on the key 2-way interaction on object recognition</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>anova_2way_obj <span class="ot">=</span> <span class="fu">ezANOVA</span>(</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> data_ind <span class="sc">%&gt;%</span> <span class="fu">filter</span>(type <span class="sc">==</span> <span class="st">"same"</span>, component <span class="sc">==</span> <span class="st">"object"</span>),</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">dv =</span> .(general_recog),</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">wid =</span> .(code_s1), </span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">within =</span> .(valence),</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">between =</span> .(condition)</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Converting "code_s1" to factor for ANOVA.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Converting "valence" to factor for ANOVA.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Data is unbalanced (unequal N per group). Make sure you specified a
+well-considered value for the type argument to ezANOVA().</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(anova_2way_obj)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$ANOVA
+             Effect DFn DFd           F          p p&lt;.05          ges
+2         condition   1  21 4.323170357 0.05003924       1.254058e-01
+3           valence   1  21 0.006055818 0.93870864       8.751011e-05
+4 condition:valence   1  21 0.716974594 0.40668448       1.025535e-02</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="do">## 2-way anova: test on the 2-way interaction on background</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>anova_2way_bgd <span class="ot">=</span> <span class="fu">ezANOVA</span>(</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> data_ind <span class="sc">%&gt;%</span> <span class="fu">filter</span>(type <span class="sc">==</span> <span class="st">"same"</span>, component <span class="sc">==</span> <span class="st">"background"</span>),</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">dv =</span> .(general_recog),</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">wid =</span> .(code_s1), </span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">within =</span> .(valence),</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">between =</span> .(condition)</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Converting "code_s1" to factor for ANOVA.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Converting "valence" to factor for ANOVA.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Data is unbalanced (unequal N per group). Make sure you specified a
+well-considered value for the type argument to ezANOVA().</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(anova_2way_bgd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$ANOVA
+             Effect DFn DFd         F          p p&lt;.05          ges
+2         condition   1  21 1.4863273 0.23630481       0.0538740958
+3           valence   1  21 6.1042983 0.02213371     * 0.0537675810
+4 condition:valence   1  21 0.1054559 0.74859089       0.0009806895</code></pre>
+</div>
+</div>
+<p>###Data plots</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># summarize data for plotting</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>data_summary <span class="ot">&lt;-</span> data_ind <span class="sc">%&gt;%</span> </span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(type <span class="sc">==</span> <span class="st">"same"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(condition, component,valence) <span class="sc">%&gt;%</span> </span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_spe_recog =</span> <span class="fu">mean</span>(specific_recog, <span class="at">na.rm =</span> T), </span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">sd_spe_recog =</span> <span class="fu">sd</span>(specific_recog, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">se_spe_recog =</span> sd_spe_recog<span class="sc">/</span><span class="fu">sqrt</span>(<span class="fu">n</span>()), </span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">ci_spe_recog =</span>  <span class="fl">1.96</span><span class="sc">*</span>se_spe_recog,</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_gen_recog =</span> <span class="fu">mean</span>(general_recog, <span class="at">na.rm =</span> T), </span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">sd_gen_recog =</span> <span class="fu">sd</span>(general_recog, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">se_gen_recog =</span> sd_gen_recog<span class="sc">/</span><span class="fu">sqrt</span>(<span class="fu">n</span>()), </span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>            <span class="at">ci_gen_recog =</span>  <span class="fl">1.96</span><span class="sc">*</span>se_gen_recog, </span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a>            <span class="at">count =</span> <span class="fu">n</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'condition', 'component'. You can override
+using the `.groups` argument.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">head</span>(data_summary, <span class="dv">8</span>), <span class="at">digits =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 7%">
+<col style="width: 6%">
+<col style="width: 10%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 10%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 4%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">condition</th>
+<th style="text-align: left;">component</th>
+<th style="text-align: left;">valence</th>
+<th style="text-align: right;">mean_spe_recog</th>
+<th style="text-align: right;">sd_spe_recog</th>
+<th style="text-align: right;">se_spe_recog</th>
+<th style="text-align: right;">ci_spe_recog</th>
+<th style="text-align: right;">mean_gen_recog</th>
+<th style="text-align: right;">sd_gen_recog</th>
+<th style="text-align: right;">se_gen_recog</th>
+<th style="text-align: right;">ci_gen_recog</th>
+<th style="text-align: right;">count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">wake</td>
+<td style="text-align: left;">object</td>
+<td style="text-align: left;">negative</td>
+<td style="text-align: right;">0.48</td>
+<td style="text-align: right;">0.17</td>
+<td style="text-align: right;">0.04</td>
+<td style="text-align: right;">0.09</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">0.26</td>
+<td style="text-align: right;">0.07</td>
+<td style="text-align: right;">0.13</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">wake</td>
+<td style="text-align: left;">object</td>
+<td style="text-align: left;">neutral</td>
+<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">0.53</td>
+<td style="text-align: right;">0.19</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.09</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">wake</td>
+<td style="text-align: left;">background</td>
+<td style="text-align: left;">negative</td>
+<td style="text-align: right;">0.22</td>
+<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">0.46</td>
+<td style="text-align: right;">0.28</td>
+<td style="text-align: right;">0.07</td>
+<td style="text-align: right;">0.14</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">wake</td>
+<td style="text-align: left;">background</td>
+<td style="text-align: left;">neutral</td>
+<td style="text-align: right;">0.29</td>
+<td style="text-align: right;">0.19</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">0.56</td>
+<td style="text-align: right;">0.28</td>
+<td style="text-align: right;">0.07</td>
+<td style="text-align: right;">0.14</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sleep</td>
+<td style="text-align: left;">object</td>
+<td style="text-align: left;">negative</td>
+<td style="text-align: right;">0.53</td>
+<td style="text-align: right;">0.13</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.09</td>
+<td style="text-align: right;">0.39</td>
+<td style="text-align: right;">0.11</td>
+<td style="text-align: right;">0.04</td>
+<td style="text-align: right;">0.07</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sleep</td>
+<td style="text-align: left;">object</td>
+<td style="text-align: left;">neutral</td>
+<td style="text-align: right;">0.27</td>
+<td style="text-align: right;">0.13</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.09</td>
+<td style="text-align: right;">0.33</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sleep</td>
+<td style="text-align: left;">background</td>
+<td style="text-align: left;">negative</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">0.07</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.32</td>
+<td style="text-align: right;">0.22</td>
+<td style="text-align: right;">0.08</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sleep</td>
+<td style="text-align: left;">background</td>
+<td style="text-align: left;">neutral</td>
+<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">0.09</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">0.06</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: right;">0.21</td>
+<td style="text-align: right;">0.07</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">8</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Rescue: The results of general recognition of the two groups (wake and sleep) is in the subplot A blow.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot general recognition</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data_summary , <span class="fu">aes</span>(<span class="at">x =</span> condition, <span class="at">y =</span> mean_gen_recog, <span class="at">fill =</span> component))<span class="sc">+</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position=</span><span class="fu">position_dodge</span>(), <span class="at">width=</span><span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean_gen_recog <span class="sc">-</span> ci_gen_recog, <span class="at">ymax=</span>mean_gen_recog <span class="sc">+</span> ci_gen_recog), <span class="at">position=</span><span class="fu">position_dodge</span>(.<span class="dv">5</span>), <span class="at">width=</span>.<span class="dv">2</span>, <span class="at">size=</span><span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(. <span class="sc">~</span> valence)<span class="sc">+</span></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"General recognition"</span>)<span class="sc">+</span></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_grey</span>()<span class="sc">+</span> ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot specific recognition</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data_summary , <span class="fu">aes</span>(<span class="at">x =</span> condition, <span class="at">y =</span> mean_spe_recog, <span class="at">fill =</span> component))<span class="sc">+</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position=</span><span class="fu">position_dodge</span>(), <span class="at">width=</span><span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean_spe_recog <span class="sc">-</span> ci_spe_recog, <span class="at">ymax=</span>mean_spe_recog <span class="sc">+</span> ci_spe_recog), <span class="at">position=</span><span class="fu">position_dodge</span>(.<span class="dv">5</span>), <span class="at">width=</span>.<span class="dv">2</span>, <span class="at">size=</span><span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(. <span class="sc">~</span> valence)<span class="sc">+</span></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Specific recognition"</span>)<span class="sc">+</span></span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_grey</span>()<span class="sc">+</span> ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()</span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_grid</span>(p1, p2, <span class="at">ncol =</span> <span class="dv">1</span>, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">'A'</span>, <span class="st">'B'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Replication-Report-Template_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>First replication:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"rep_fig.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="rep_fig.png" class="img-fluid figure-img" width="489"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Original:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"original_fig.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="original_fig.png" class="img-fluid figure-img" width="498"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Additional Denis 2022:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"denis_fig.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="denis_fig.png" class="img-fluid figure-img" width="240"></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="exploratory-analyses" class="level3">
+<h3 class="anchored" data-anchor-id="exploratory-analyses">Exploratory analyses</h3>
+<p>Any follow-up analyses desired (not required).</p>
+</section>
+</section>
+<section id="discussion" class="level1">
+<h1>Discussion</h1>
+<p><strong>The original authors published a replication of their original study in 2022 (Denis et al., 2022) where they included a condition with positive images. It would have been interesting to also include this condition, and included it as a control measure to test whether valence and arousal rating of positive and negatively valenced stimuli differed significantly, however, due to time and budgetary constraints, and the fact that getting participants to fulfill the existing requirements was already difficult, unfortunately, adding a positive stimuli control condition was not possible.</strong></p>
+<section id="mini-meta-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="mini-meta-analysis">Mini meta analysis</h2>
+<p><strong>For the 3-way interaction between condition, object and valence</strong> <strong>The original study had an F(1,46)= 4.7 and a p-value of p&lt;0.03 </strong> <strong>the original 251 replication had an F(1,21)=0.8344312 and p-value of p&lt;0.371363404 </strong> <strong>The 2022 Original Author replication had an F(1,278)=4.12 and a p-value of p&lt;0.043 </strong> <strong>My rescue had an F(1,21)=1.45 and a p-value of p&lt;0.24</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>effect_sizes <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Study =</span> <span class="fu">c</span>(<span class="st">"2008 Original"</span>, <span class="st">"251 Replication"</span>, <span class="st">"2022 Replication"</span>, <span class="st">"Rescue"</span>),</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">F_Statistic =</span> <span class="fu">c</span>(<span class="fl">4.7</span>, <span class="fl">0.8</span>, <span class="fl">4.1</span>, <span class="fl">1.45</span>))</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>effect_sizes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>             Study F_Statistic
+1    2008 Original        4.70
+2  251 Replication        0.80
+3 2022 Replication        4.10
+4           Rescue        1.45</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>mini_meta <span class="ot">=</span> <span class="fu">ggplot</span>(effect_sizes, <span class="fu">aes</span>(<span class="at">x =</span> Study, <span class="at">y =</span> F_Statistic)) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">23</span>, <span class="at">size =</span> <span class="dv">4</span>)</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>mini_meta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Replication-Report-Template_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Combining across the original paper, 1st replication, and 2nd replication, what is the aggregate effect size?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Rescue summary stat plots</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>rescue_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(meta_plot_rescue , <span class="fu">aes</span>(<span class="at">x =</span> condition, <span class="at">y =</span> mean_gen_recog, <span class="at">fill =</span> component)) <span class="sc">+</span></span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position=</span><span class="fu">position_dodge</span>(), <span class="at">width=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Rescue"</span>) <span class="sc">+</span></span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_grey</span>()<span class="sc">+</span> ggthemes<span class="sc">::</span><span class="fu">theme_few</span>() <span class="sc">+</span></span>
+<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Mean General Recognition"</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">"Condition"</span>) <span class="sc">+</span></span>
+<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>))</span>
+<span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a>rescue_plot</span>
+<span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 251 Original Replication Plot</span></span>
+<span id="cb47-11"><a href="#cb47-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-12"><a href="#cb47-12" aria-hidden="true" tabindex="-1"></a>meta_plot_251 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(meta_plot_251_replication , <span class="fu">aes</span>(<span class="at">x =</span> condition, <span class="at">y =</span> mean_gen_recog, <span class="at">fill =</span> component)) <span class="sc">+</span></span>
+<span id="cb47-13"><a href="#cb47-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position=</span><span class="fu">position_dodge</span>(), <span class="at">width=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb47-14"><a href="#cb47-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"251 Rep"</span>) <span class="sc">+</span></span>
+<span id="cb47-15"><a href="#cb47-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_grey</span>()<span class="sc">+</span> ggthemes<span class="sc">::</span><span class="fu">theme_few</span>() <span class="sc">+</span></span>
+<span id="cb47-16"><a href="#cb47-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Mean General Recognition"</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">"Condition"</span>) <span class="sc">+</span></span>
+<span id="cb47-17"><a href="#cb47-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>))</span>
+<span id="cb47-18"><a href="#cb47-18" aria-hidden="true" tabindex="-1"></a>meta_plot_251</span>
+<span id="cb47-19"><a href="#cb47-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-20"><a href="#cb47-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Original 2008 Study Plot</span></span>
+<span id="cb47-21"><a href="#cb47-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-22"><a href="#cb47-22" aria-hidden="true" tabindex="-1"></a>meta_plot_2008 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(meta_plot_2008_original , <span class="fu">aes</span>(<span class="at">x =</span> condition, <span class="at">y =</span> mean_gen_recog, <span class="at">fill =</span> component)) <span class="sc">+</span></span>
+<span id="cb47-23"><a href="#cb47-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position=</span><span class="fu">position_dodge</span>(), <span class="at">width=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb47-24"><a href="#cb47-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"2008"</span>) <span class="sc">+</span></span>
+<span id="cb47-25"><a href="#cb47-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_grey</span>()<span class="sc">+</span> ggthemes<span class="sc">::</span><span class="fu">theme_few</span>() <span class="sc">+</span></span>
+<span id="cb47-26"><a href="#cb47-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Mean General Recognition"</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">"Condition"</span>) <span class="sc">+</span></span>
+<span id="cb47-27"><a href="#cb47-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>))</span>
+<span id="cb47-28"><a href="#cb47-28" aria-hidden="true" tabindex="-1"></a>meta_plot_2008</span>
+<span id="cb47-29"><a href="#cb47-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-30"><a href="#cb47-30" aria-hidden="true" tabindex="-1"></a><span class="co"># 2022 Replication Plot</span></span>
+<span id="cb47-31"><a href="#cb47-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-32"><a href="#cb47-32" aria-hidden="true" tabindex="-1"></a>meta_plot_2022 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(meta_plot_2022_original , <span class="fu">aes</span>(<span class="at">x =</span> condition, <span class="at">y =</span> mean_gen_recog, <span class="at">fill =</span> component)) <span class="sc">+</span></span>
+<span id="cb47-33"><a href="#cb47-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position=</span><span class="fu">position_dodge</span>(), <span class="at">width=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb47-34"><a href="#cb47-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"2022 Rep"</span>) <span class="sc">+</span></span>
+<span id="cb47-35"><a href="#cb47-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_grey</span>()<span class="sc">+</span> ggthemes<span class="sc">::</span><span class="fu">theme_few</span>() <span class="sc">+</span></span>
+<span id="cb47-36"><a href="#cb47-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Mean General Recognition"</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">"Condition"</span>) <span class="sc">+</span></span>
+<span id="cb47-37"><a href="#cb47-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>))</span>
+<span id="cb47-38"><a href="#cb47-38" aria-hidden="true" tabindex="-1"></a>meta_plot_2022</span>
+<span id="cb47-39"><a href="#cb47-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-40"><a href="#cb47-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-41"><a href="#cb47-41" aria-hidden="true" tabindex="-1"></a>rescue_plot</span>
+<span id="cb47-42"><a href="#cb47-42" aria-hidden="true" tabindex="-1"></a>meta_plot_251</span>
+<span id="cb47-43"><a href="#cb47-43" aria-hidden="true" tabindex="-1"></a>meta_plot_2008</span>
+<span id="cb47-44"><a href="#cb47-44" aria-hidden="true" tabindex="-1"></a>meta_plot_2022</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Side-by-side plots - Redoing the plots to make it cleaner</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>rescue_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(meta_plot_rescue , <span class="fu">aes</span>(<span class="at">x =</span> condition, <span class="at">y =</span> mean_gen_recog, <span class="at">fill =</span> component)) <span class="sc">+</span></span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position=</span><span class="fu">position_dodge</span>(), <span class="at">width=</span><span class="fl">0.5</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> <span class="co"># Removing legend to make side-by-sidep plot cleaner</span></span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Rescue"</span>) <span class="sc">+</span></span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_grey</span>()<span class="sc">+</span> ggthemes<span class="sc">::</span><span class="fu">theme_few</span>() <span class="sc">+</span></span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">""</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)) </span>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a>meta_plot_251 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(meta_plot_251_replication , <span class="fu">aes</span>(<span class="at">x =</span> condition, <span class="at">y =</span> mean_gen_recog, <span class="at">fill =</span> component)) <span class="sc">+</span></span>
+<span id="cb48-10"><a href="#cb48-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position=</span><span class="fu">position_dodge</span>(), <span class="at">width=</span><span class="fl">0.5</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb48-11"><a href="#cb48-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"251 Rep"</span>) <span class="sc">+</span></span>
+<span id="cb48-12"><a href="#cb48-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_grey</span>()<span class="sc">+</span> ggthemes<span class="sc">::</span><span class="fu">theme_few</span>() <span class="sc">+</span></span>
+<span id="cb48-13"><a href="#cb48-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">""</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb48-14"><a href="#cb48-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>))</span>
+<span id="cb48-15"><a href="#cb48-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-16"><a href="#cb48-16" aria-hidden="true" tabindex="-1"></a>meta_plot_2022 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(meta_plot_2022_original , <span class="fu">aes</span>(<span class="at">x =</span> condition, <span class="at">y =</span> mean_gen_recog, <span class="at">fill =</span> component)) <span class="sc">+</span></span>
+<span id="cb48-17"><a href="#cb48-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position=</span><span class="fu">position_dodge</span>(), <span class="at">width=</span><span class="fl">0.5</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb48-18"><a href="#cb48-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"2022 Rep"</span>) <span class="sc">+</span></span>
+<span id="cb48-19"><a href="#cb48-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_grey</span>()<span class="sc">+</span> ggthemes<span class="sc">::</span><span class="fu">theme_few</span>() <span class="sc">+</span></span>
+<span id="cb48-20"><a href="#cb48-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">""</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb48-21"><a href="#cb48-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>))</span>
+<span id="cb48-22"><a href="#cb48-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-23"><a href="#cb48-23" aria-hidden="true" tabindex="-1"></a>meta_plot_2008 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(meta_plot_2008_original , <span class="fu">aes</span>(<span class="at">x =</span> condition, <span class="at">y =</span> mean_gen_recog, <span class="at">fill =</span> component)) <span class="sc">+</span></span>
+<span id="cb48-24"><a href="#cb48-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position=</span><span class="fu">position_dodge</span>(), <span class="at">width=</span><span class="fl">0.5</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb48-25"><a href="#cb48-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"2008"</span>) <span class="sc">+</span></span>
+<span id="cb48-26"><a href="#cb48-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_grey</span>()<span class="sc">+</span> ggthemes<span class="sc">::</span><span class="fu">theme_few</span>() <span class="sc">+</span></span>
+<span id="cb48-27"><a href="#cb48-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Mean General Recognition"</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb48-28"><a href="#cb48-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>))</span>
+<span id="cb48-29"><a href="#cb48-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-30"><a href="#cb48-30" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gridExtra)</span>
+<span id="cb48-31"><a href="#cb48-31" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(meta_plot_2008, meta_plot_251, meta_plot_2022, rescue_plot, <span class="at">ncol=</span><span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="summary-of-replication-attempt" class="level3">
+<h3 class="anchored" data-anchor-id="summary-of-replication-attempt">Summary of Replication Attempt</h3>
+<p>Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.</p>
+<p><strong>This rescue attempt did not successfully replicate either the original study or the 2022 replication done by the original authors. The results from the 3-way interaction ANOVA were not statistically significant and had a small effect size (F-statistic).</strong></p>
+</section>
+<section id="commentary" class="level3">
+<h3 class="anchored" data-anchor-id="commentary">Commentary</h3>
+<p>Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt. None of these need to be long.</p>
+<p><strong>I imagine this rescue may have replicated with a large enough sample size. Unfortunately due to time, budgetary, and logistical constraints, this was not possible over the space of a single academic quarter. I think the same is true for the original 251 replication attempt which actually ended up recruiting the exact same number of participants as myself (~24). The original study was done in person, so the authors we likely able to get much better study completion rates. And for the 2022 replication, I imagined they had a team of researchers working full-time on the study. Prolific participants often found the design of the study confusing, and communicating with participants took a decent amount of time.</strong></p>
+<p><strong>Communication with the original authors and the original 251 replication author went very smoothly.</strong></p>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
