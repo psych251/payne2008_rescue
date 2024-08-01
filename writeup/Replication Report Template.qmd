@@ -2,8 +2,8 @@
 title: "Replication of Sleep Preferentially Enhances Memory for Emotional Components of Scenes by Payne, Stickgold, Swanberg and Kensinger (2008, Psychological Science)"
 author: "Daniel Ogunbamowo (dogun@stanford.edu)"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
-output:
-  html_document:
+format:
+  html:
     toc: true
     toc_depth: 3
 ---
